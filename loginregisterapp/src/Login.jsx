@@ -1,3 +1,6 @@
 export const Login = () => {
-  <> Login </>
+  return (
+    <> Login </>
+  )
+  
 }
