@@ -1,10 +1,17 @@
+import React, {useState} from "react";
+
+
 export const Login = () => {
+  const [email, setemail] = useState('');
+  const [pass, setpass] = useState('');
+
   return (
     <form>
       <label for="email">Email</label>
-      <input type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+      <input value={email} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
       <label for="password">Password</label>
-      <input tupe="password" placeholder="enter your password" id="password" name="password"/>
+      <input value={pass} type="password" placeholder="******" id="password" name="password"/>
+      <button>Log in</button>
     </form>
   )
   
