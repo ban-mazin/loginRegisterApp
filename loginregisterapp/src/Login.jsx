@@ -19,6 +19,7 @@ export const Login = () => {
       <input value={pass} type="password" placeholder="******" id="password" name="password"/>
       <button type="submit">Log in</button>
     </form>
+    <button> Already have an account? Register</button>
     </>
     
   )
