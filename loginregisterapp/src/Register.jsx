@@ -5,9 +5,14 @@ export const Register = () => {
  const [pass, setPass] = useState('');
  const [name, setName] = useState('');
 
+ const handleSubmit = (e) => {
+   e.preventDefault();
+   console.log(email);
+ }
+
   return (
     <> 
-    <form>
+    <form onSubmit={handleSubmit}>
       <label for="email">email</label>
       <input value={email} onChange={(e) => setEmail(e.target.value)} type="email"/>
       <label for="password">password</label>
