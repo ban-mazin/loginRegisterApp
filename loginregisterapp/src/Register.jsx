@@ -1,6 +1,6 @@
-export const Rsgister = () => {
+export const Register = () => {
   return (
-    <> Regiser </>
+    <> Register </>
   )
   
 }
