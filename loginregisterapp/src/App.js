@@ -1,10 +1,10 @@
-import React, {usestate} from "react";
+import React, {useState} from "react";
 import './App.css';
 import {Login} from './Login';
 import {Register} from './Register';
 
 function App() {
-  const [currentForm, setcurrentForm] = usestate('login');
+  const [currentForm, setcurrentForm] = useState('login');
   return (
     <div className="App">
       {
