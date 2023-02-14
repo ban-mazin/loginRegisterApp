@@ -13,6 +13,8 @@ export const Register = () => {
   return (
     <> 
     <form onSubmit={handleSubmit}>
+    <label for="name">name</label>
+      <input value={name} onChange={(e) => setName(e.target.value)} type="name"/>
       <label for="email">email</label>
       <input value={email} onChange={(e) => setEmail(e.target.value)} type="email"/>
       <label for="password">password</label>
