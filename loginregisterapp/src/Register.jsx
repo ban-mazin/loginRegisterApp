@@ -21,6 +21,7 @@ export const Register = () => {
       <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="******" id="password" name="password"/>
       <button type="submit"> Register</button>
     </form>
+    <button>Already have an account? Login here</button>
     
     </>
   )
