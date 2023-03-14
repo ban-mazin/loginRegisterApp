@@ -11,7 +11,7 @@ export const Login = (props) => {
   }
 
   return (
-    <>
+    <div classname="auth-from-container">
       <form onSubmit={handleSubmit}>
           <label for="email" >Email</label>
           <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
@@ -20,7 +20,7 @@ export const Login = (props) => {
           <button type="submit">LogIn</button>
     </form>
           <button onClick={() => props.onFormSwitch('register')}> Already have an account?Register</button>
-    </>
+    </div>
     
   )
   
