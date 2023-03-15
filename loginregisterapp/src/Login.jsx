@@ -12,7 +12,7 @@ export const Login = (props) => {
 
   return (
     <div classname="auth-from-container">
-      <form onSubmit={handleSubmit}>
+      <form className="loginform" onSubmit={handleSubmit}>
           <label for="email" >Email</label>
           <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
           <label for="password">Password</label>
